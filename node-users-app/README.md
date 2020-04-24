@@ -1,1 +1,1 @@
-# Intro to: Docker + MongoDB + Node.js
+#### Intro to: Docker + MongoDB + Node.js stack.
