@@ -4,15 +4,15 @@ class MongooseInstance {
   connect = async () => {
     const mongoURL = "mongodb://localhost:27017";
 
-    const mongoosInputConfig = {
+    const mongooseInputConfig = {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     };
 
-    const mongooseInstance =  await mongoose.connect(mongoURL, mongoosInputConfig);
-    mongooseInstance.set('useFindAndModify', false)
-  };
+    const instance = await mongoose.connect(mongoURL, mongooseInputConfig);
+    instance.set('useFindAndModify', false)
 
+  };
 }
 
 export default MongooseInstance;
